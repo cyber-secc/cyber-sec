@@ -23,6 +23,18 @@ button {
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
 /* Body styles */
 body {
   font-family: "Jost", sans-serif;
@@ -180,7 +192,7 @@ a:hover {
 /* ****************************************** */
 
 .page-bg {
-  background-image: url(/images/bgImage.svg);
+  background-image: url(/images/bgImage.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -434,6 +446,10 @@ a:hover {
   z-index: 1;
   overflow: hidden;
   padding: 60px 20px 0;
+  background-image: url(/images/footerBg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
 }
 .footer_area .row {
   margin-left: -25px;
