@@ -601,7 +601,8 @@ a:hover {
 
 .copywrite-wrapper p {
   font-size: 16px;
-  line-height: 36px;
+  line-height: 26px;
+  text-align: center;
   color: #999;
 }
 @-webkit-keyframes bi-cycle {
@@ -630,4 +631,97 @@ ol,
 ul {
   margin: 0;
   padding: 0;
+}
+
+.navbar-toggler {
+  filter: invert(1);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--background-color);
+  z-index: 999;
+}
+
+@media screen and (max-width: 1240px) {
+  .navbar-nav {
+    column-gap: 32px;
+  }
+
+  .blog-content-wrapper {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero-banner {
+    min-height: 50vh;
+  }
+  .cyber-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .form-wrapper {
+    padding: 30px;
+  }
+  .header .nav-link {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .section-title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .blog-wrapper .section-title,
+  .service-wrapper .section-title {
+    text-align: center;
+  }
+  .banner-content {
+    gap: 16px;
+  }
+  .banner-desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .form-wrapper {
+    padding: 20px;
+  }
+  .navbar {
+    --bs-navbar-padding-y: 15px;
+  }
+  .single-footer-widget {
+    margin-top: 20px;
+  }
+  .footer_area {
+    padding-top: 10px;
+  }
+  .companies-wrapper {
+    padding: 30px 0;
+  }
+  .contact-wrapper .feature-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .contact-tile-info h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contact-tile-info p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contact-tile {
+    gap: 16px;
+  }
 }
